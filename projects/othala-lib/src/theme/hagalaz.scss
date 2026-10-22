@@ -1,0 +1,126 @@
+:root {
+    /* ---------- Core palette ---------- */
+    --bg: #0a0807; /* ash black, base background */
+    --bg-darker: #040302;
+    --bg-dark: #070605;
+    --bg-lighter: #14100e; /* soot: bars, notifications */
+
+    --iron: #2e2724; /* borders, selection, frames */
+    --selection: var(--iron);
+    --border: var(--iron);
+    --muted: #6b635c; /* comments, placeholders (= color8) */
+
+    --fg: #d5cbbb; /* bone, body text */
+    --fg-dark: #867d73;
+    --fg-light: #e3dacb;
+    --fg-bright: #efe8dc;
+
+    /* ---------- Accent (blood red) ---------- */
+    --accent: #c1121f; /* primary accent, active border start */
+    --accent-tail: #5a0d10; /* dried blood, active border gradient end */
+    --accent-gradient: linear-gradient(45deg, var(--accent), var(--accent-tail));
+
+    /* ---------- Terminal colors (color0–color15) ---------- */
+    --color0: #0a0807;
+    --color1: #b8323a; /* muted blood red, urgent/error */
+    --color2: #7d8a68; /* sage */
+    --color3: #a8956a; /* dusty gold */
+    --color4: #6f7f8c; /* grey-blue */
+    --color5: #8c6a76; /* dusty mauve */
+    --color6: #6f8c88; /* muted teal */
+    --color7: #c4bcae;
+    --color8: #6b635c; /* = muted */
+    --color9: #d4474d;
+    --color10: #9aa886;
+    --color11: #c9b98a;
+    --color12: #8fa0ae;
+    --color13: #ad8b97;
+    --color14: #8fadaa;
+    --color15: #efe8dc;
+
+    /* ---------- Semantic aliases ---------- */
+    --danger: var(--color1);
+    --danger-bright: var(--color9);
+    --success: var(--color2);
+    --warning: var(--color3);
+    --info: var(--color4);
+    --link: var(--color12);
+
+    /* ---------- Window frame (from Hyprland look & feel) ---------- */
+    --border-active: var(--accent);
+    --border-inactive: var(--iron);
+    --border-size: 3px;
+    --border-size-thin: 2px;
+    --radius: 0;
+    --gap-in: 6px;
+    --gap-out: 12px;
+
+    /* ---------- Typography ---------- */
+    --font-display: "Grenze Gotisch", serif;
+    --font-mono: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
+    --font-runes: "Noto Sans Runic", sans-serif;
+    --font-features-num: "lnum" 1, "tnum" 1; /* lining + tabular numerals for Grenze */
+
+    /* ---------- Font sizes ---------- */
+    --text-2xs: 0.625rem;  /* 10px: tiny labels, metadata */
+    --text-xs: 0.75rem;    /* 12px: captions, secondary labels */
+    --text-sm: 0.875rem;   /* 14px: compact UI, buttons */
+    --text-base: 1rem;     /* 16px: body text */
+    --text-md: 1.125rem;   /* 18px: emphasized body text */
+    --text-lg: 1.25rem;    /* 20px: section headings */
+    --text-xl: 1.5rem;     /* 24px: card headings */
+    --text-2xl: 1.875rem;  /* 30px: page headings */
+    --text-3xl: 2.25rem;   /* 36px: large headings */
+    --text-4xl: 3rem;      /* 48px: hero headings */
+    --text-5xl: 3.75rem;   /* 60px: oversized display text */
+
+    /* ---------- Line heights ---------- */
+    --leading-none: 1;
+    --leading-tight: 1.2;
+    --leading-snug: 1.35;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.65;
+    --leading-loose: 1.8;
+
+    /* ---------- Font weights ---------- */
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    /* ---------- Letter spacing ---------- */
+    --tracking-tight: -0.025em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.05em;
+    --tracking-wider: 0.1em;
+    --tracking-widest: 0.15em;
+
+    /* ---------- Spacing ---------- */
+    --space-0: 0;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono Nerd Font';
+    src: url('../assets/fonts/JetBrainsMonoNerdFont-Regular.ttf')
+    format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono Nerd Font';
+    src: url('../assets/fonts/JetBrainsMonoNerdFont-Bold.ttf')
+    format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

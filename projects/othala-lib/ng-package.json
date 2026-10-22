@@ -1,0 +1,19 @@
+{
+    "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+    "dest": "../../dist/othala-lib",
+    "lib": {
+        "entryFile": "src/public-api.ts"
+    },
+    "assets": [
+        {
+            "input": "src/theme",
+            "glob": "**/*.scss",
+            "output": "theme"
+        },
+        {
+            "input": "src/assets",
+            "glob": "**/*",
+            "output": "assets"
+        }
+    ]
+}

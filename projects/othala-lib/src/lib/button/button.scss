@@ -1,0 +1,102 @@
+.button {
+    /* ---------- Base ---------- */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+
+    padding: var(--space-2) var(--space-4);
+
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    font-weight: var(--weight-semibold);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-wide);
+    text-align: center;
+
+    color: var(--fg-bright);
+    background: var(--bg-lighter);
+
+    border: var(--border-size-thin) solid var(--border);
+    border-radius: var(--radius);
+
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+
+    transition:
+        color 160ms ease,
+        background-color 160ms ease,
+        border-color 160ms ease,
+        box-shadow 160ms ease,
+        transform 100ms ease;
+
+    /* ---------- Hover ---------- */
+    &:hover:not(:disabled) {
+        color: var(--fg-bright);
+        background: var(--iron);
+        border-color: var(--accent);
+    }
+
+    /* ---------- Focus ---------- */
+    &:focus-visible {
+        outline: var(--border-size-thin) solid var(--accent);
+        outline-offset: var(--space-1);
+    }
+
+    /* ---------- Active ---------- */
+    &:active:not(:disabled) {
+        background: var(--bg-dark);
+        border-color: var(--accent-tail);
+        transform: translateY(1px);
+    }
+
+    /* ---------- Disabled ---------- */
+    &:disabled {
+        color: var(--muted);
+        background: var(--bg-dark);
+        border-color: var(--iron);
+        cursor: not-allowed;
+        opacity: 0.65;
+    }
+
+    /* ---------- Variants ---------- */
+    &--primary {
+        color: var(--fg-bright);
+        background: var(--accent);
+        border-color: var(--accent);
+
+        &:hover:not(:disabled) {
+            background: var(--accent-tail);
+            border-color: var(--accent);
+        }
+
+        &:active:not(:disabled) {
+            background: var(--bg-darker);
+        }
+    }
+
+    &--secondary {
+        color: var(--fg);
+        background: transparent;
+        border-color: var(--iron);
+
+        &:hover:not(:disabled) {
+            color: var(--fg-bright);
+            background: var(--bg-lighter);
+            border-color: var(--accent);
+        }
+    }
+
+    &--ghost {
+        color: var(--fg);
+        background: transparent;
+        border-color: transparent;
+
+        &:hover:not(:disabled) {
+            color: var(--accent);
+            background: var(--bg-lighter);
+            border-color: transparent;
+        }
+    }
+}
