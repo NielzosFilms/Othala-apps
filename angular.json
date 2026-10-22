@@ -40,30 +40,30 @@
                 }
             }
         },
-        "watchlist": {
+        "what-to-watch": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
                     "style": "scss"
                 }
             },
-            "root": "projects/watchlist",
-            "sourceRoot": "projects/watchlist/src",
+            "root": "projects/what-to-watch",
+            "sourceRoot": "projects/what-to-watch/src",
             "prefix": "app",
             "architect": {
                 "build": {
                     "builder": "@angular/build:application",
                     "options": {
-                        "browser": "projects/watchlist/src/main.ts",
-                        "tsConfig": "projects/watchlist/tsconfig.app.json",
+                        "browser": "projects/what-to-watch/src/main.ts",
+                        "tsConfig": "projects/what-to-watch/tsconfig.app.json",
                         "inlineStyleLanguage": "scss",
                         "assets": [
                             {
                                 "glob": "**/*",
-                                "input": "projects/watchlist/public"
+                                "input": "projects/what-to-watch/public"
                             }
                         ],
-                        "styles": ["projects/watchlist/src/styles.scss"],
+                        "styles": ["projects/what-to-watch/src/styles.scss"],
                         "stylePreprocessorOptions": {
                             "includePaths": ["dist"]
                         }
@@ -96,10 +96,10 @@
                     "builder": "@angular/build:dev-server",
                     "configurations": {
                         "production": {
-                            "buildTarget": "watchlist:build:production"
+                            "buildTarget": "what-to-watch:build:production"
                         },
                         "development": {
-                            "buildTarget": "watchlist:build:development"
+                            "buildTarget": "what-to-watch:build:development"
                         }
                     },
                     "defaultConfiguration": "development"

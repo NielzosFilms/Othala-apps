@@ -31,10 +31,10 @@
             "path": "./projects/othala-lib/tsconfig.spec.json"
         },
         {
-            "path": "./projects/watchlist/tsconfig.app.json"
+            "path": "./projects/what-to-watch/tsconfig.app.json"
         },
         {
-            "path": "./projects/watchlist/tsconfig.spec.json"
+            "path": "./projects/what-to-watch/tsconfig.spec.json"
         }
     ]
 }
